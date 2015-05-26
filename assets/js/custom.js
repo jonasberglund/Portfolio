@@ -147,12 +147,38 @@
 			}
 
 			else {				
-				    $('#contact-form .ajax-hidden').fadeOut(500);
-				    response.html("Message Sent. I will contact you asap. Thanks.").fadeIn(500);
+				    
+					var xhr = new XMLHttpRequest();
+				      xhr.open('POST', '//formspree.io/berglund.jonas@gmail.com', true);
+				      xhr.setRequestHeader("Accept", "application/json")
+				      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+				      xhr.send(
+				        "name=" + c_name +
+				        "&email=" + c_email +
+				        "&message=" + c_message);
+
+				      xhr.onloadend = function (res) {
+				        if (res.target.status === 200){
+				          	$('#contact-form .ajax-hidden').fadeOut(500);
+				    		response.html("Message Sent. I will contact you asap. Thanks.").fadeIn(500);
+				        }
+				        else {
+				          	$('#contact-form .ajax-hidden').fadeOut(500);
+				    		response.html("Sorry, there was an error. Please try again.").fadeIn(500);
+				        }
+				      }
+				    });
+
+				    
 				}
             
             	return false;
 			});
+
+
+
+	      
 
 
 		// Isotope filters
