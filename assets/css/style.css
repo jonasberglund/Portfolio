@@ -976,7 +976,6 @@ figure.effect-bubba:hover p {
 ***
  */
 
-
 /* Isotope Items
 ---------------------------------- */
 .filters {
@@ -1003,7 +1002,7 @@ figure.effect-bubba:hover p {
 	margin-bottom: 20px;
 }
 .isotope-item .btn-default {
-	color: #999999;
+	color: #999;
 }
 .isotope-item .btn-default:hover {
 	color: #ffffff;
@@ -1028,7 +1027,7 @@ figure.effect-bubba:hover p {
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(85, 172, 238, 0.9);
+	background-color: rgba(231,116,111, 0.8);
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
@@ -1070,4 +1069,53 @@ figure.effect-bubba:hover p {
 	filter: alpha(opacity=100);
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+/* Template Components
+----------------------------------------------------------------------------- */
+/* Buttons
+---------------------------------- */
+.btn {
+	padding: 8px 15px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	min-width: 160px;
+	text-align: center;
+	border-radius: 0;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.btn-default {
+	color: #55acee;
+}
+.btn-default:hover {
+	color: #ffffff;
+	background-color: rgba(231,116,111, 0.8);
+	border-color: rgba(231,116,111, 0.8);
+}
+
+
+
+/* Pills
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover {
+	background-color: rgba(231,116,111, 0.8);
+	border-color: rgba(231,116,111, 0.8);
+	color: #ffffff;
+}
+.nav-pills > li > a {
+	border-radius: 0;
+	padding: 8px 20px;
+	
+	color: #666666;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
 }
