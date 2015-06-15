@@ -343,7 +343,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/cover.png);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -1027,7 +1027,7 @@ figure.effect-bubba:hover p {
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(231,116,111, 0.8);
+	background-color: rgba(17, 17, 17, 0.8);
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
@@ -1094,8 +1094,8 @@ figure.effect-bubba:hover p {
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: rgba(231,116,111, 0.8);
-	border-color: rgba(231,116,111, 0.8);
+	background-color: rgba(17, 17, 17, 0.8);
+	border-color: rgba(17, 17, 17, 0.8);
 }
 
 
@@ -1106,15 +1106,15 @@ figure.effect-bubba:hover p {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-	background-color: rgba(231,116,111, 0.8);
-	border-color: rgba(231,116,111, 0.8);
+	background-color: rgba(17, 17, 17, 0.8);
+	border-color: rgba(17, 17, 17, 0.8);
 	color: #ffffff;
 }
 .nav-pills > li > a {
 	border-radius: 0;
 	padding: 8px 20px;
 	
-	color: #666666;
+	color: #666666;ƒ
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 300;
