@@ -1020,6 +1020,7 @@ figure.effect-bubba:hover p {
 	position: relative;
 	display: block;
 	overflow: hidden;
+	border-radius: 3px;
 }
 .overlay {
 	position: absolute;
@@ -1096,6 +1097,7 @@ figure.effect-bubba:hover p {
 	color: #ffffff;
 	background-color: rgba(17, 17, 17, 0.8);
 	border-color: rgba(17, 17, 17, 0.8);
+	border-radius: 3px;
 }
 
 
@@ -1111,7 +1113,7 @@ figure.effect-bubba:hover p {
 	color: #ffffff;
 }
 .nav-pills > li > a {
-	border-radius: 0;
+	border-radius: 3px;
 	padding: 8px 20px;
 	
 	color: #666666;ƒ
