@@ -1,0 +1,95 @@
+<svg id="bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 263.41">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: #76777a;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
+        stroke: #76777a;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2, .cls-6 {
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-5, .cls-8 {
+        stroke-width: 5px;
+      }
+
+      .cls-8 {
+        stroke-linecap: round;
+        stroke-linejoin: bevel;
+      }
+      .wheel {
+        fill: none;
+        stroke: #76777a;
+        stroke-width:3px;
+        stroke-dasharray: 16em;
+        stroke-dashoffset: 0;
+        animation:movewheel 2s normal linear infinite;
+      }
+      @keyframes movewheel {
+        from { stroke-dashoffset: 32em; }
+        to { stroke-dashoffset: 0; }
+      }
+      .chain {
+        fill: none;
+        stroke: #76777a;
+        stroke-width:1px;
+        stroke-dasharray: 10;
+        stroke-dashoffset: 2;
+        animation:movechain 0.2s normal linear infinite;
+      }
+      @keyframes movechain {
+        from { stroke-dashoffset: 20; }
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+  <title>bike</title>
+  <g id="wheels">
+    <g id="inner">
+      <circle class="cls-1" cx="84" cy="179.41" r="10.73"/>
+      <circle class="cls-1" cx="338" cy="179.41" r="10.72"/>
+    </g>
+    <g id="outer">
+      <circle class="wheel" cx="84" cy="179.41" r="82.5"/>
+      <circle class="wheel" cx="338" cy="179.41" r="82.5"/>
+    </g>
+  </g>
+  <g id="body">
+    <circle id="peddal_wheel" class="cls-3" cx="186.2" cy="198.23" r="26.79"/>
+    <g id="chain">
+      <line class="chain" x1="177.25" y1="223.48" x2="79.72" y2="189.24"/>
+      <line class="chain" x1="86.5" y1="168.98" x2="186.2" y2="171.44"/>
+    </g>
+    <g id="frame">
+      <path class="cls-4" d="M94.34,203.69,155.83,71H305.41l9.7,32.35L199.32,222.26a3,3,0,0,1-2.67.85Z" transform="translate(-11.79 -24.04)"/>
+      <line class="cls-5" x1="186.2" y1="198.23" x2="144.04" y2="46.96"/>
+      <g>
+        <path class="cls-4" d="M339.78,59.32,303,51.25a1,1,0,0,0-1.19,1.17L305.41,71" transform="translate(-11.79 -24.04)"/>
+        <path class="cls-4" d="M315.11,103.35l5.62,22.86s13,57.36,29.06,77.24" transform="translate(-11.79 -24.04)"/>
+      </g>
+    </g>
+    <line id="saddle_frame" class="cls-6" x1="144.04" y1="46.96" x2="135.44" y2="17.2"/>
+    <path id="saddle" class="cls-7" d="M143.72,42.43C139,41.76,135.3,41.07,132,40.3a39.28,39.28,0,0,1-12.27-5.15c-5.92-3.9-7.57-6.07-7.45-7.69.34-4.41,6.68-3.65,11.64-2.67,5.4,1.07,17.22,4.07,18,4.2,4.32.73,27.26,2.55,28.36,2.68,1.54.18,9.46.82,9.89,2.85.39,1.87-1.58,2.95-6.73,2.81-3.6-.09-5,.38-13.7,2.28C152.71,41.15,148.92,43.17,143.72,42.43Z" transform="translate(-11.79 -24.04)"/>
+    <path id="handle" class="cls-8" d="M325.78,101.73S360.51,106,363.1,86.37c2.72-20.53-23.32-27-23.32-27" transform="translate(-11.79 -24.04)"/>
+  </g>
+</svg>
