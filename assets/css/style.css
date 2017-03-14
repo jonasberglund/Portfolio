@@ -297,8 +297,7 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-  /*background: url(../images/calltoaction.jpg);*/
-	background-image: linear-gradient(-180deg, #7ECDF1 0%, #4196CF 100%);
+	background-color: #7ECDF1;
 	padding: 50px 0;
 	color: #999;
 }
@@ -322,8 +321,6 @@ textarea.form-control {
 
 .calltoaction-btn > .btn {
   background: rgba(255, 255, 255, .8);
-  /*color: #111;*/
-	/*background: rgba(229, 84, 130, 1);*/
 	color: #4A4A4A;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -342,8 +339,6 @@ textarea.form-control {
 
 #home {
 	background-image: linear-gradient(135deg, #3D90EE 0%, #58D99E 100%);
-	/*background: url(../images/cover.jpg);
-	background-color: #222;*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
