@@ -1,0 +1,28 @@
+a {
+	color: #261c33;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #261c33;
+	text-decoration: underline;
+}
+
+/* Pills (Portfolio nav)
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover {
+	background-color: rgba(17, 17, 17, 0.8);
+	border-color: rgba(17, 17, 17, 0.8);
+	color: #ffffff;
+}
+.nav-pills > li > a {
+	border-radius: 3px;
+	padding: 8px 20px;
+	color: #7E8F9F;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
+}

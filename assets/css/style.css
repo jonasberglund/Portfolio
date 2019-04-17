@@ -1,39 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,800);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import './base/typography.css';
 
-/*!
- * My Portfolio v1.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
+@import './layout/grid.css';
 
-body {
-	font: 300 14px/1.8 'Lato', sans-serif;
-	color: #4A4A4A;
-	overflow-x: hidden;
-}
+@import './components/navigation.css';
+@import './components/footer.css';
+@import './components/link.css';
+@import './components/button.css';
 
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-a {
-	color: #439FE0;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-	color: #439FE0;
-	text-decoration: underline;
-}
-
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
-
 
 .navbar a,
 .form-control {
@@ -64,46 +45,6 @@ a,
 .navbar-custom .dropdown-menu {
 	-webkit-box-shadow: none;
 			box-shadow: none;
-}
-
-/* ---------------------------------------------- /*
- * Typography
-/* ---------------------------------------------- */
-
-h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Lato, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	margin: 5px 0 5px;
-	color: #4A4A4A;
-}
-
-h2 {
-	font-size: 30px;
-	margin: 0 0 30px;
-}
-
-h3 {
-	font-size: 13px;
-	letter-spacing: 1px;
-	margin: 0 0 5px;
-}
-
-h4 {
-	font-size: 12px;
-	letter-spacing: 1px;
-}
-
-h5 {
-	font-size: 12px;
-	letter-spacing: 1px;
-	font-weight: 400;
-}
-
-h6 {
-	font-size: 11px;
-	letter-spacing: 1px;
-	font-weight: 400;
 }
 
 /* ---------------------------------------------- /*
@@ -338,7 +279,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background-image: linear-gradient(135deg, #3D90EE 0%, #58D99E 100%);
+	background-image: linear-gradient(135deg, #261c33 0%, #261c33 100%);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -449,131 +390,6 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Footer
-/* ---------------------------------------------- */
-
-#footer {
-	background: #222;
-	text-align: center;
-	padding: 40px 0;
-	color: #FFF;
-}
-
-.copyright {
-	margin: 0;
-}
-
-.copyright a{
-    border-bottom: 1px dotted #fff;
-}
-
-#footer span{
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    color: #ff5252;
-}
-
-.social-links {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 0px;
-}
-
-.social-links li {
-	display: inline-block;
-	margin: 5px;
-}
-
-.social-links a {
-	width: 52px;
-	height: 52px;
-	display: block;
-	line-height: 51px;
-	font-size: 36px;
-	text-align: center;
-	/*border: 1px solid rgba(255, 255, 255, .1);
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-			border-radius: 3px;*/
-
-	/*color: rgba(255, 255, 255, .2);*/
-}
-
-.social-links a:hover {
-	text-decoration: none;
-	/*border: 1px solid rgba(67, 159, 224, 1);*/
-	/*color: rgba(255, 255, 255, .8);*/
-}
-
-/* ---------------------------------------------- /*
- * Navigation
-/* ---------------------------------------------- */
-
-.header {
-	border-bottom: 1px solid #f5f5f5;
-	position: relative;
-	width: 100%;
-	z-index: 998;
-}
-
-.navbar-custom {
-	border: 0;
-	border-radius: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: Lato, sans-serif;
-}
-
-.navbar-custom,
-.navbar-custom .dropdown-menu {
-	background: #fff;
-	padding: 0;
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav > li > a,
-.navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 11px;
-	letter-spacing: 3px;
-	color: #222;
-}
-
-.navbar-custom .nav li.active,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .navbar-nav > li.active a {
-	background: none;
-	outline: 0;
-	color: #439FE0;
-}
-
-.navbar-custom .navbar-brand {
-	font-weight: 700;
-	font-size: 20px;
-    font-family: Lato, sans-serif;
-}
-
-.navbar-custom .dropdown-menu {
-	border: 0;
-	border-top: 2px solid #439FE0;
-	border-radius: 0;
-}
-
-.navbar-custom .dropdown-menu > li > a {
-	padding: 10px 20px;
-}
-
-.navbar-custom .nav .open > a,
-.navbar-custom .dropdown-menu > li > a:hover,
-.navbar-custom .dropdown-menu > li > a:focus {
-	background: #f5f5f5;
-}
-
-.navbar-custom .navbar-toggle .icon-bar {
-	background: #222;
-}
-
-/* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
 
@@ -654,7 +470,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #preloader {
-	background: #FFF;
+	background: #261c33;
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -689,112 +505,7 @@ textarea.form-control {
 
 }
 
-@media (max-width: 480px) {
 
-	h1 {
-		font-size: 34px;
-		letter-spacing: 3px;
-	}
-
-	h2 {
-		font-size: 24px;
-		margin: 0 0 30px;
-		letter-spacing: 3px;
-	}
-
-}
-
-
-/*--------------------------------*/
-/***** Portfolio Common style *****/
-/*--------------------------------*/
-
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 100%;
-	list-style: none;
-	text-align: center;
-}
-
-.grid h2{
-    font-size: 20px;
-}
-
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 100%;
-	max-width: 100%;
-	height: auto;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
-
-.grid figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
-}
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
 
 /*---------------*/
 /***** Bubba *****/
@@ -1100,21 +811,3 @@ figure.effect-bubba:hover p {
 
 
 
-/* Pills
----------------------------------- */
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus,
-.nav-pills > li > a:hover {
-	background-color: rgba(17, 17, 17, 0.8);
-	border-color: rgba(17, 17, 17, 0.8);
-	color: #ffffff;
-}
-.nav-pills > li > a {
-	border-radius: 3px;
-	padding: 8px 20px;
-	color: #7E8F9F;
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
