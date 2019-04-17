@@ -70,6 +70,18 @@
 	background: #f5f5f5;
 }
 
-.navbar-toggle[aria-expanded="true"] {
-	background-color: #42DCA3;
-}
+.navbar-toggle .icon-bar {
+    transition: all 0.2s;
+  }
+  .navbar-toggle[aria-expanded="true"] .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .navbar-toggle[aria-expanded="true"] .middle-bar {
+	opacity: 0;
+	width: 0;
+  }
+  .navbar-toggle[aria-expanded="true"] .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
