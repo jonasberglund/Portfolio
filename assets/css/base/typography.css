@@ -13,7 +13,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 Lato, sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color: #4A4A4A;

@@ -41,16 +41,9 @@
 	line-height: 51px;
 	font-size: 36px;
 	text-align: center;
-	/*border: 1px solid rgba(255, 255, 255, .1);
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-			border-radius: 3px;*/
-
-	/*color: rgba(255, 255, 255, .2);*/
+	color: #439FE0;
 }
 
 .social-links a:hover {
 	text-decoration: none;
-	/*border: 1px solid rgba(67, 159, 224, 1);*/
-	/*color: rgba(255, 255, 255, .8);*/
 }
