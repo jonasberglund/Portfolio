@@ -75,7 +75,7 @@
   }
   .navbar-toggle[aria-expanded="true"] .top-bar {
     transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform-origin: 14% 200%;
   }
   .navbar-toggle[aria-expanded="true"] .middle-bar {
 	opacity: 0;
@@ -83,5 +83,5 @@
   }
   .navbar-toggle[aria-expanded="true"] .bottom-bar {
     transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform-origin: 20% -80%;
   }
