@@ -113,60 +113,6 @@ textarea.form-control {
     min-width: 100%;
 }
 
-/* ---------------------------------------------- /*
- * Custom button style
-/* ---------------------------------------------- */
-
-.btn {
-	font-family: Lato, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 13px;
-	padding: 8px 26px;
-	border: 0;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn.active {
-	outline: inherit !important;
-}
-
-/* Button size */
-
-.btn-lg,
-.btn-group-lg > .btn {
-	padding: 10px 25px;
-	font-size: 13px;
-    background: rgba(17, 17, 17, 0.8);
-    color: #fff;
-}
-.btn-lg:hover,
-.btn-group-lg > .btn:hover{
-    background: rgba(17, 17, 17, 1.8);
-    color: #fff;
-}
-
-.btn-sm,
-.btn-group-sm > .btn {
-	padding: 6px 25px;
-	font-size: 11px;
-}
-
-.btn-xs,
-.btn-group-xs > .btn {
-	padding: 5px 25px;
-	font-size: 10px;
-}
-
-.btn .icon-before {
-	margin-right: 6px;
-}
-
-.btn .icon-after {
-	margin-left: 6px;
-}
 
 /* ---------------------------------------------- /*
  * General Styles
@@ -228,7 +174,7 @@ textarea.form-control {
 .calltoaction h2 {
 	font-size: 20px;
 	letter-spacing: 1px;
-	margin-bottom: 5px;
+	margin-bottom: 24px;
 }
 
 .calltoaction-decription{
@@ -243,13 +189,32 @@ textarea.form-control {
 }
 
 .calltoaction-btn > .btn {
-  background: rgba(255, 255, 255, .8);
-	color: #4A4A4A;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    text-transform: none;
+    margin: 5px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .calltoaction-btn > .btn:hover{
-    background: #fff;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.calltoaction-btn > .btn-primary {
+    background: #261c33;
+    color: white;
+}
+
+.calltoaction-btn > .btn-primary:hover{
+    background: #261c33;
+}
+
+.calltoaction-btn > .btn-secondary {
+    background: white;
+    color: #261c33;
 }
 
 .long-down {
@@ -746,34 +711,5 @@ figure.effect-bubba:hover p {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
-/* Template Components
------------------------------------------------------------------------------ */
-/* Buttons
----------------------------------- */
-.btn {
-	padding: 8px 15px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	min-width: 160px;
-	text-align: center;
-	border-radius: 0;
-	text-transform: uppercase;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.btn-default {
-	color: #55acee;
-}
-.btn-default:hover {
-	color: #ffffff;
-	background-color: rgba(17, 17, 17, 0.8);
-	border-color: rgba(17, 17, 17, 0.8);
-	border-radius: 3px;
-}
-
 
 
