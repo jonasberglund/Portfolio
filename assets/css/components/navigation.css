@@ -28,22 +28,57 @@
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 11px;
 	letter-spacing: 3px;
-	color: #222;
+	font-weight: 400;
+	color: #555;
+}
+
+.navbar-right > li > a::after,
+.navbar-right > li > a:active::after { 
+	content: "";
+  display: block;
+  position: absolute;
+  top: 80%;
+  width: 80%;
+  left: 10%;
+  height: .05rem;
+  background: #2b2b2b;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+  transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+  -o-transition: .55s transform cubic-bezier(0.18, 0.00, 0.35, 1.00);
+  transition: transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+  transition: transform .55s cubic-bezier(.19,1,.22,1),-webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+}
+
+.navbar-custom .nav li.active::after,
+.navbar-custom .navbar-nav > li.active a::after {
+	transform-origin: left center;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
 }
 
 .navbar-custom .nav li.active,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
+
 .navbar-custom .navbar-nav > li.active a {
-	background: none;
-	outline: 0;
-	color: #439FE0;
+  background: none;
+  outline: 0;
+	color: #222;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 20px;
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
@@ -85,3 +120,5 @@
     transform: rotate(-45deg);
     transform-origin: 20% -80%;
   }
+
+  

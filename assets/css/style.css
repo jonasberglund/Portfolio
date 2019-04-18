@@ -184,22 +184,6 @@ textarea.form-control {
 	padding: 0;
 }
 
-.calltoaction h1,
-.calltoaction h2,
-.calltoaction h3,
-.calltoaction h4,
-.calltoaction h5,
-.calltoaction h6,
-.pfblock-image,
-.pfblock-image h1,
-.pfblock-image h2,
-.pfblock-image h3,
-.pfblock-image h4,
-.pfblock-image h5,
-.pfblock-image h6 {
-	color: #fff;
-}
-
 .pfblock-header {
 	text-align: center;
 	margin: 0 0 60px;
@@ -238,9 +222,7 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-	background-color: #7ECDF1;
-	padding: 50px 0;
-	color: #999;
+	padding-top: 60px;
 }
 
 .calltoaction h2 {
@@ -279,14 +261,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background-image: linear-gradient(135deg, #261c33 0%, #261c33 100%);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+	background-color: #261c33;
 	padding: 0;
 }
 
@@ -317,7 +292,8 @@ textarea.form-control {
 }
 
 .intro h1{
-    font-weight: 800;
+	font-weight: 800;
+	color: white;
 }
 
 .start {
@@ -355,30 +331,20 @@ textarea.form-control {
  * Skills
 /* ---------------------------------------------- */
 
-.chart {
-    display: inline-block;
-    height: 140px;
-    margin: 50px 0;
-    position: relative;
-    text-align: center;
-    width: 140px;
+#skills {
+	position: relative;
 }
-.chart canvas {
-    left: 0;
+
+#skills::before {
+	content: "";
     position: absolute;
-    top: 0;
-}
-.percent {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 140px;
-    z-index: 2;
-}
-.percent:after {
-    content: "%";
-    font-size: 50%;
-    margin-left: 0.1em;
+    z-index: -1;
+    width: 100%;
+	height: 100%;
+	top: 0;
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    background: #f5f5f5;
 }
 
 /* ---------------------------------------------- /*
