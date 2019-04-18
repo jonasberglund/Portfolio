@@ -261,12 +261,13 @@ textarea.form-control {
 	color: white;
 }
 
-.start {
+.hero_subtitle {
 	font-family: Lato, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
 	margin: 15px 0;
+	color: white;
 }
 
 /* ---------------------------------------------- /*

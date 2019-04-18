@@ -35,33 +35,70 @@
 .navbar-right > li > a::after,
 .navbar-right > li > a:active::after { 
 	content: "";
-  display: block;
-  position: absolute;
-  top: 80%;
-  width: 80%;
-  left: 10%;
-  height: .05rem;
-  background: #2b2b2b;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
-  -webkit-transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
-  transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
-  -o-transition: .55s transform cubic-bezier(0.18, 0.00, 0.35, 1.00);
-  transition: transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
-  transition: transform .55s cubic-bezier(.19,1,.22,1),-webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+    display: block;
+    position: absolute;
+    top: 80%;
+    width: 80%;
+    left: 10%;
+    height: .05rem;
+    background: #2b2b2b;
+    all: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+    transition: -webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+    -o-transition: .55s transform cubic-bezier(0.18, 0.00, 0.35, 1.00);
+    transition: transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
+    transition: transform .55s cubic-bezier(.19,1,.22,1),-webkit-transform .55s cubic-bezier(0.18, 0.00, 0.35, 1.00);
 }
 
 .navbar-custom .nav li.active::after,
 .navbar-custom .navbar-nav > li.active a::after {
 	transform-origin: left center;
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
 }
+
+@media (max-width: 767px) {
+    .navbar-right > li > a::after,
+    .navbar-right > li > a:active::after { 
+        top: 10%;
+        width: 0.2rem;
+        left: 4px;
+        height: 80%;
+        transform-origin: left bottom;
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+
+    .navbar-custom .nav li.active::after,
+    .navbar-custom .navbar-nav > li.active a::after {
+        transform-origin: left top;
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+}
+
+}
+
+.sticky-wrapper .navbar {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -o-transition: all .2s all ease-in-out;
+}
+
+.sticky-wrapper.is-sticky .navbar {
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -70,15 +107,15 @@
 
 .navbar-custom .nav li.active,
 .navbar-custom .navbar-nav > li.active a {
-  background: none;
-  outline: 0;
+    background: none;
+    outline: 0;
 	color: #222;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 20px;
-  font-family: Lato, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
@@ -107,18 +144,17 @@
 
 .navbar-toggle .icon-bar {
     transition: all 0.2s;
-  }
-  .navbar-toggle[aria-expanded="true"] .top-bar {
+}
+.navbar-toggle[aria-expanded="true"] .top-bar {
     transform: rotate(45deg);
     transform-origin: 14% 200%;
-  }
-  .navbar-toggle[aria-expanded="true"] .middle-bar {
-	opacity: 0;
-	width: 0;
-  }
-  .navbar-toggle[aria-expanded="true"] .bottom-bar {
+}
+.navbar-toggle[aria-expanded="true"] .middle-bar {
+    opacity: 0;
+    width: 0;
+}
+.navbar-toggle[aria-expanded="true"] .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 20% -80%;
-  }
+}
 
-  
