@@ -18,8 +18,8 @@ a:hover {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-	background-color: rgba(17, 17, 17, 0.8);
-	border-color: rgba(17, 17, 17, 0.8);
+	background-color: #261c33;
+	border-color: #261c33;
 	color: #ffffff;
 }
 .nav-pills > li > a {

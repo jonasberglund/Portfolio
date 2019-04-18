@@ -24,7 +24,7 @@
 .btn-group-lg > .btn {
 	padding: 10px 25px;
 	font-size: 13px;
-    background: rgba(17, 17, 17, 0.8);
+    background: #261c33;
     color: #fff;
 }
 .btn-lg:hover,
@@ -73,11 +73,11 @@
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-	color: #55acee;
+	color: #333;
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: rgba(17, 17, 17, 0.8);
-	border-color: rgba(17, 17, 17, 0.8);
+	background-color: #261c33;
+	border-color: #261c33;
 	border-radius: 3px;
 }
