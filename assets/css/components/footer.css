@@ -6,6 +6,10 @@
 	background: #222;
 	text-align: center;
 	padding: 40px 0;
+	min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	color: #FFF;
 }
 

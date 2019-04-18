@@ -2,11 +2,11 @@
   <defs>
     <style>
       .cls-1, .cls-7 {
-        fill: #76777a;
+        fill: #fff;
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
-        stroke: #76777a;
+        stroke: #fff;
       }
 
       .cls-1, .cls-2 {
@@ -39,7 +39,7 @@
       }
       .wheel {
         fill: none;
-        stroke: #76777a;
+        stroke: #fff;
         stroke-width:3px;
         stroke-dasharray: 16em;
         stroke-dashoffset: 0;
@@ -51,7 +51,7 @@
       }
       .chain {
         fill: none;
-        stroke: #76777a;
+        stroke: #fff;
         stroke-width:1px;
         stroke-dasharray: 10;
         stroke-dashoffset: 2;
