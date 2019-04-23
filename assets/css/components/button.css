@@ -1,13 +1,39 @@
+/* Template Components
+----------------------------------------------------------------------------- */
+/* Buttons
+---------------------------------- */
+.btn {
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	min-width: 160px;
+	text-align: center;
+	border-radius: 0;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.btn-default {
+	color: #333;
+}
+.btn-default:hover {
+	color: #ffffff;
+	background-color: #261c33;
+	border-color: #261c33;
+	border-radius: 3px;
+}
+
+
 /* ---------------------------------------------- /*
  * Custom button style
 /* ---------------------------------------------- */
 
 .btn {
 	font-family: Lato, sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 13px;
-	padding: 8px 26px;
 	border: 0;
 }
 
@@ -22,9 +48,9 @@
 
 .btn-lg,
 .btn-group-lg > .btn {
-	padding: 10px 25px;
-	font-size: 13px;
-    background: #261c33;
+	padding: 12px 26px;
+	background: #261c33;
+	font-size: 16px;
     color: #fff;
 }
 .btn-lg:hover,
@@ -51,33 +77,4 @@
 
 .btn .icon-after {
 	margin-left: 6px;
-}
-
-
-/* Template Components
------------------------------------------------------------------------------ */
-/* Buttons
----------------------------------- */
-.btn {
-	padding: 8px 15px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	min-width: 160px;
-	text-align: center;
-	border-radius: 0;
-	text-transform: uppercase;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.btn-default {
-	color: #333;
-}
-.btn-default:hover {
-	color: #ffffff;
-	background-color: #261c33;
-	border-color: #261c33;
-	border-radius: 3px;
 }
