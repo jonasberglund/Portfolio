@@ -36,7 +36,7 @@
 		 * Navbar
 		/* ---------------------------------------------- */
 
-		$('.header').sticky({
+		$('#header').sticky({
 			topSpacing: 0
 		});
 

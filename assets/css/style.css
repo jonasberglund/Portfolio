@@ -122,6 +122,12 @@ textarea.form-control {
 	padding: 120px 0 100px;
 }
 
+@media (max-width: 767px) {
+	.pfblock {
+		padding: 60px 0;
+	}
+}
+
 .pfblock-gray {
 	position: relative;
 }
